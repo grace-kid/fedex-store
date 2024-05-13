@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+body { 
+
+    background-color: whitesmoke;
+   
+}
+@keyframes fdin { 
+    
+    0% {transform: translateY(70px); opacity: 0;}
+    100%{transform: translateY(0px); opacity: 100%;}
+}
+@keyframes fdinr {
+    0% {transform: translateX(70px); opacity: 0;}
+    100%{transform: translateX(0px); opacity: 100%;}
+}
+header div img { width: 60px;
+    
+}
+header { 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 10px;
+    
+}
+.hi {
+    display: flex;
+}
+.i { 
+    width: 15px;
+    height: 2px;
+    background-color: rgb(252, 104, 6);
+    margin: 3px;
+}  
+.i:hover {
+    width: 20px;
+    height: 2px;
+    background-color:black;
+    margin: 3px;
+}
+.icon { 
+    padding-inline: 20px;
+    width: 25px;
+    height: 15px;
+    overflow: hidden;
+
+}
+.icon:hover {
+    width: 40px;
+    height: 100%;
+    overflow: auto;
+}
+.icon:hover .i:nth-child(2) {
+    width: 40px;
+    background-color: rgb(252, 104, 6);
+    transform: translateY(8px) rotate(-45deg);
+}
+.icon:hover .i:nth-child(1) {
+
+    width: 40px;
+    background-color: rgb(252, 104, 6);
+    transform: translateY(8px) rotate(45deg);
+}
+.icon:hover .i:nth-child(3) {
+    display: none;
+    visibility: hidden;
+    background-color: rgb(252, 104, 6);
+    transform: translateY(8px) rotate(40deg);
+}
+i {
+    padding-inline: 10px;
+    color: rgb(252, 104, 6);
+}
+.hb:hover ~button {
+    appearance: none;
+    height: 0px;
+}
+
+i:hover  { 
+    text-shadow: 0px 0px 4px  rgb(252, 104, 6) ;
+    color: black;
+
+}  
+.sei {
+    display: inline-block;
+    animation: fdinr 5s linear forwards 1;
+
+}
+.sei .card img{
+    height: 250px;
+    width: 200px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+    
+}
+.sei .card {
+    background-color: white;
+    width: 200px;
+    margin: 5px;
+    font-weight: 600;
+    box-shadow: 0px 1px 2px black;
+}
+.sei .card .name {
+    
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.rem;
+}
+.sei .card .pra {
+    font-weight: 600;
+    color:  rgb(252, 104, 6);
+    padding-right: 20px;
+}
+.sei .card .pn {
+color: rgba(0, 0, 0, 0.329);
+}
+.sei .card .prb {
+    text-decoration: line-through;
+    padding-right: 20px;
+    color:  rgba(0, 0, 0, 0.329);
+}
+.sei .card .per {
+    color: rgba(84, 247, 9, 0.986);
+}
+.sei .card {
+    display: inline-block;
+    height: 400px;
+    overflow:scroll ;
+}
+a {  
+    color: rgb(255, 115, 0);
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.di {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+    text-align: center;
+    padding-block: 10px;
+}
+.payi {
+    color: rgb(255, 115, 0);
+    font-weight: 600;
+    display: block;
+    padding-block: 10px;
+}
+.pay img {
+    height: 40px;
+    padding-block: 10px
+}
+.pay {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+.contact {
+    padding-block: 10px;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    font-weight: 600;
+}
+.infor {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    color:  rgb(255, 115, 0);
+}
+.shpi a img {
+width: 100px;
+height: 50px;
+color: blue;
+}
+.spi {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    width: 120px;
+    padding: 5px;
+    
+    
+}
+.shpi {
+    display: flex;
+    justify-content: space-between;
+}
+.flot {
+    text-align: center;
+    padding-block: 10px;
+    text-decoration: underline;
+}
+.bio {
+    text-align: center;
+    font-weight: 600;
+}
+.bion {
+    color: rgb(255, 115, 0) ;
+    
+}
+@media only screen and (max-width:550px)
+ { .s1 div img {
+   height: 150px;width: 200px;}}
+@media   screen and (max-width:550px) {
+    .s1 div { display: block;}
+}
+#cle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+    border: 2px solid rgba(0, 0, 0, 0.068);
+}
+
+.co {
+    color:  rgb(255, 115, 0);
+    border-right: 2px solid rgba(0, 0, 0, 0.11);
+    padding-right: 30px;
+}
+.pmmm {
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.082);
+
+}
+.pm {
+    display: block;
+    padding-block: 10px;
+}
+.pmmm:hover {
+    height: 2%;
+}
+.ctf  form {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20%;
+  
+}
+ form input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.068);
+ } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

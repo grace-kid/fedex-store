@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+body { 
+
+    background-color: white;
+   
+}
+@keyframes fdin { 
+    
+    0% {transform: translateY(70px); opacity: 0;}
+    100%{transform: translateY(0px); opacity: 100%;}
+}
+@keyframes fdinr {
+    0% {transform: translateX(70px); opacity: 0;}
+    100%{transform: translateX(0px); opacity: 100%;}
+}
+header div img { width: 60px;
+}
+header { 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 10px;
+}
+.hi {
+    display: flex;
+}
+.i { 
+    width: 15px;
+    height: 2px;
+    background-color: rgb(252, 104, 6);
+    margin: 3px;
+}  
+.i:hover {
+    width: 20px;
+    height: 2px;
+    background-color:black;
+    margin: 3px;
+}
+.icon { padding-inline: 20px;
+    width: 25px;
+    height: 15px;
+    overflow: hidden;
+
+}
+i {
+    padding-inline: 10px;
+    color: rgb(252, 104, 6);
+}
+i:hover  { 
+    text-shadow: 0px 0px 4px  rgb(252, 104, 6) ;
+    color: black;
+
+}  
+.icon:hover {
+    width: 40px;
+    height: 100%;
+    overflow: auto;
+}
+.icon:hover .i:nth-child(2) {
+    width: 40px;
+    background-color: rgb(252, 104, 6);
+    transform: translateY(8px) rotate(-45deg);
+}
+.icon:hover .i:nth-child(1) {
+
+    width: 40px;
+    background-color: rgb(252, 104, 6);
+    transform: translateY(8px) rotate(45deg);
+}
+.icon:hover .i:nth-child(3) {
+    display: none;
+    visibility: hidden;
+    background-color: rgb(252, 104, 6);
+    transform: translateY(8px) rotate(40deg);
+}
+i {
+    padding-inline: 10px;
+    color: rgb(252, 104, 6);
+}
+.hb:hover ~button {
+    appearance: none;
+    height: 0px;
+}
+
+i:hover  { 
+    text-shadow: 0px 0px 4px  rgb(252, 104, 6) ;
+    color: black;
+}
+input {
+    width: 100%;
+        margin-inline: 10px;
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 2px solid rgba(0, 0, 0, 0.103);
+}
+
+.gif img {
+    width: 225px;
+    margin:10px ;
+    animation: fdin
+    5s 
+    linear
+      forwards 
+      1
+       ;
+}
+.gif {
+    text-align: center;
+    margin-top: 10%;
+}
